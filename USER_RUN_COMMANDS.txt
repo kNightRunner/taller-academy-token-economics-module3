@@ -1,0 +1,14 @@
+LAB 3 — OPTIONAL VALIDATION (NOT EXECUTED BY ASSISTANT)
+
+To use the no-API-key path: submit the public repository URL directly.
+Exercise 2 is already solved as an explicitly labeled PAPER scenario.
+
+To measure real cache behavior yourself:
+1. Place your own non-sensitive >=5,000-token document in doc.txt
+2. Configure OPENAI_API_KEY and OPENAI_MODEL
+3. python -m pip install -r requirements.txt
+4. python -m src.experiments --provider openai --doc doc.txt
+5. Examine results/observed_experiment_2.json
+6. Only if you want, update SUBMISSION.md with observed counts
+
+Reminder: a provider without a cache_write field does not prove 0 actual writes.
